@@ -17,16 +17,16 @@ class Graph:
         return self.find_subtree(parent, parent[i])
 
     # Connects subtrees containing nodes `x` and `y`
-    def connect_subtrees(self, parent, subtree_sizes, x, y):
+    def connect_subtrees(self, parent, rank, x, y):
         xroot = self.find_subtree(parent, x)
         yroot = self.find_subtree(parent, y)
-        if subtree_sizes[xroot] < subtree_sizes[yroot]:
+        if rank[xroot] < rank[yroot]:
             parent[xroot] = yroot
-        elif subtree_sizes[xroot] > subtree_sizes[yroot]:
+        elif rank[xroot] > rank[yroot]:
             parent[yroot] = xroot
         else:
             parent[yroot] = xroot
-            subtree_sizes[xroot] += 1
+            rank[xroot] += 1
 
     def kruskals_mst(self):
         # Resulting tree
