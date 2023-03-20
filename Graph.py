@@ -1,9 +1,12 @@
-import re
 class Graph:
     def __init__(self, num_of_nodes):
         self.m_num_of_nodes = num_of_nodes
         self.m_graph = []
-
+   
+    def get_orignal_graph(self):
+        return self.m_graph   
+    
+    
     def add_edge(self, node1, node2, weight):
         self.m_graph.append([node1, node2, weight])
     
@@ -24,9 +27,7 @@ class Graph:
         else:
             parent[yroot] = xroot
             subtree_sizes[xroot] += 1
-    
-    def get_orignal_graph(self):
-        return self.m_graph     
+
     def kruskals_mst(self):
         # Resulting tree
         result = []
@@ -41,12 +42,12 @@ class Graph:
         
         # Auxiliary arrays
         parent = []
-        subtree_sizes = []
+        rank = []
 
-        # Initialize `parent` and `subtree_sizes` arrays
+        # Initialize `parent` and `rank` arrays
         for node in range(self.m_num_of_nodes):
             parent.append(node)
-            subtree_sizes.append(0)
+            rank.append(0)
 
         # Important property of MSTs
         # number of egdes in a MST is 
@@ -62,9 +63,7 @@ class Graph:
             if x != y:
                 e = e + 1
                 result.append([node1, node2, weight])
-                self.connect_subtrees(parent, subtree_sizes, x, y)
-        
-            # Write to file the resulting MST
+                self.connect_subtrees(parent, rank, x, y)
        
         return result
         
