@@ -6,8 +6,8 @@ class InputData:
         while True:
             try:
                 number_nodes = int(input("Enter the number of nodes: "))
-                if number_nodes > 26:
-                    print("Number of nodes must be less than 26")
+                if number_nodes < 1 or number_nodes > 26:
+                    print("Number of nodes must be in range 1-26")
                     continue
                 return number_nodes
             except:
