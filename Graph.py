@@ -11,11 +11,12 @@ class Graph:
         self.m_graph.append([node1, node2, weight])
     
     # Finds the root node of a subtree containing node `i`
-    def find_subtree(self, parent, i):
-        if parent[i] == i:
-            return i
-        return self.find_subtree(parent, parent[i])
+    def find_subtree(self, parent, node):
+        if parent[node] == node:
+            return node
+        return self.find_subtree(parent, parent[node])
 
+    
     # Connects subtrees containing nodes `x` and `y`
     def connect_subtrees(self, parent, rank, x, y):
         xroot = self.find_subtree(parent, x)
@@ -64,6 +65,7 @@ class Graph:
                 e = e + 1
                 result.append([node1, node2, weight])
                 self.connect_subtrees(parent, rank, x, y)
-       
+        print(parent)
+        print(rank)
         return result
         

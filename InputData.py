@@ -31,7 +31,7 @@ class InputData:
                 weight = int(input("Enter the weight: "))
                 return weight
             except:
-                print("Weight must be a number")
+                print("Weight must be a integer number")
     @classmethod
     def input_yes_no(cls, message="Do you want to continue? (Y/N)"):
         while True:

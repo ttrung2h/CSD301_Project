@@ -38,7 +38,7 @@ if __name__ == "__main__":
             if not Valid.check_yes_no(answer):
                 break
         
-    ## Test    
+    # Test    
     # number_of_nodes = 9
     # G = Graph(number_of_nodes)
     # G.add_edge(2, 4, 6)
