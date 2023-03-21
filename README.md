@@ -25,16 +25,16 @@ Each step figure building spanning tree :
 ### Step 1
 ![Step 1](result/Step_0.png)
 ### Step 2
-![Step 2](result/step_1.png)
+![Step 2](result/Step_1.png)
 ### Step 3
-![Step 3](result/step_2.png)
+![Step 3](result/Step_2.png)
 ### Step 4
-![Step 4](result/step_3.png)
+![Step 4](result/Step_3.png)
 ### Step 5
-![Step 5](result/step_4.png)
+![Step 5](result/Step_4.png)
 ### Step 6
-![Step 6](result/step_5.png)
+![Step 6](result/Step_5.png)
 ### Step 7
-![Step 7](result/step_6.png)
+![Step 7](result/Step_6.png)
 ### Step 8
-![Step 8](result/step_7.png)
+![Step 8](result/Step_7.png)
