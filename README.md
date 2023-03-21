@@ -21,11 +21,11 @@ A graph have n vertices and is connected. Vertices are labeled by characters fro
 *    D E 10 - edge D-E with weight 10
 ## Output
 Each step figure building spanning tree
-![Step 1](result/step_0.png)
-![Step 2](result/step_1.png)
-![Step 3](result/step_2.png)
-![Step 4](result/step_3.png)
-![Step 5](result/step_4.png)
-![Step 6](result/step_5.png)
-![Step 7](result/step_6.png)
-![Step 8](result/step_7.png)
+![Step 1](result//step_0.png)
+![Step 2](result//step_1.png)
+![Step 3](result//step_2.png)
+![Step 4](result//step_3.png)
+![Step 5](result//step_4.png)
+![Step 6](result//step_5.png)
+![Step 7](result//step_6.png)
+![Step 8](result//step_7.png)
