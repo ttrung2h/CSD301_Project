@@ -23,7 +23,7 @@ class plot:
         # Graph spanning tree
         T = nx.Graph()
         for i,(node1,node2,weight) in enumerate(self.spanning_graph):
-            fig = plt.figure(figsize=(10,12))
+            fig = plt.figure(figsize=(7,10))
             # Draw the original graph
             nx.draw_networkx_edges(G, pos, edge_color='gray', alpha=0.5)
             nx.draw_networkx_nodes(G, pos, node_size=1000)
